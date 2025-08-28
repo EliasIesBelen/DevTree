@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",                 // Carpeta donde se guardan los archivos compilados (.js y .d.ts)
-    "rootDir": "./src",                 // Carpeta donde están los archivos fuente (.ts)
-    "lib": ["ESNext"],                  // Librerías de JavaScript que el compilador reconoce (funciones modernas)
-    "target": "ESNext",                 // Versión de JavaScript a la que se compila (la más moderna)
-    "moduleResolution": "nodenext",     // Cómo se resuelven los módulos (import/export) en Node.js con ES Modules
-    "module": "nodenext",               // Tipo de módulo que usa el proyecto (ES Modules para Node.js)
-    "strict": false,                    // Desactiva las comprobaciones estrictas de tipos (menos riguroso)
-    "sourceMap": true,                  // Genera archivos para facilitar la depuración en navegadores o editores
-    "esModuleInterop": true,            // Facilita la interoperabilidad entre módulos CommonJS y ES Modules
-    "declaration": true                 // Genera archivos de definición de tipos (.d.ts) para usar en otros proyectos
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "target": "ESNext",
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
+    "strict": false,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "declaration": true
   },
-  "include": ["src/**/*.ts"]            // Indica que compile todos los archivos .ts dentro de la carpeta src y subcarpetas
+  "include": ["src/**/*.ts"],
+  "exclude": ["dist"]
 }
