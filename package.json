@@ -1,11 +1,10 @@
 {
   "name": "devtree",
-  "type": "module",
   "version": "1.0.0",
   "description": "Primer Proyecto con Express TypeScript",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon src/index.ts"
   },
   "author": "Elias Ureña Garcia",
   "license": "ISC",
@@ -13,6 +12,9 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "@types/express": "^5.0.3",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }
