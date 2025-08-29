@@ -11,10 +11,15 @@
   "author": "Elias Ureña Garcia",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "colors": "^1.4.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
     "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
