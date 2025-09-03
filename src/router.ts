@@ -1,4 +1,5 @@
 import { Router } from 'express'
+import { createAccound } from './handlers'
 
 const router = Router()
 
@@ -7,9 +8,6 @@ router.get('/', (req, res) => {
     res.send('Hola mundo desde GET /')
 })
 
-router.post('/auth/register', (req, res) => {
-    console.log('Desde register')
-    res.status(200).json({ message: 'Registro recibido' })
-})
+router.post('/auth/register',createAccound ) 
 
 export default router
