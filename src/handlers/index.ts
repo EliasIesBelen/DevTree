@@ -1,9 +1,15 @@
 import { Request, Response } from "express"
+import {validationResult} from 'express-validator'
 import slug from 'slug'
 import User from "../models/User"
 import { hashPassword } from "../utils/auth"
 
 export const createAccound = async (req: Request, res: Response) => {
+    //Manejar errores
+    let error = validationResult(req)
+    if(!error.isEmpty()){
+        return res.status(400).json({error: error.array()})
+    }
 
     const { email, password} = req.body
 
